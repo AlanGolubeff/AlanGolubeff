@@ -1,0 +1,132 @@
+@import url('http://googleapis.com/css?family=Dancing+Script');
+
+body {
+    text-align: center;
+    background-color: rgb(184, 181, 181)
+}
+
+
+h1 {
+    display: inline-block;
+    position: relative;
+    font-family: 'Dancing Script';
+}
+
+h2 {
+    font-family: 'Dancing Script';
+}
+
+h1::after,
+h1::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: black;
+    top: 0.6em;
+}
+
+h1::before {
+    left: -140px;
+}
+
+h1::after {
+    right: -140px;
+}
+
+#animacion {
+    width: 100%;
+    height: 7px;
+    background-color: black;
+    animation-name: footeranimacion;
+    animation-duration: 5s;
+    animation-delay: 0, 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes footeranimacion {
+    0% {
+        background: black;
+    }
+
+    50% {
+        background: white;
+    }
+
+    100% {
+        background: black;
+    }
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #333;
+    margin: 50px 50px;
+    padding: 20px;
+}
+
+.form {
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+}
+
+.form__imput {
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid #5dd;
+    background: transparent;
+    color: #fff;
+}
+
+.form__imput:focus {
+    background: linear-gradient(to bottom, transparent, #222);
+    outline: none;
+    border-bottom: 3px solid #5da;
+}
+
+.form textarea {
+    min-height: 140px;
+    resize: none;
+}
+
+.form-img {
+    flex: 1;
+    display: flex;
+    padding: 10px;
+}
+
+.form-img div {
+    padding: 10px;
+}
+
+.img-conteiner {
+    padding: 20px;
+    margin: auto;
+}
+
+.img-container div {
+    background-color: rgb(251, 248, 248);
+    border-radius: 50%;
+    text-align: center;
+    padding: 40px;
+}
+
+.form-img img {
+    width: 90%;
+    margin: auto;
+}
+
+.form input[type="submit"]:focus {
+    background-color: #5dd;
+}
+
+.form input[type="submit"]:active {
+    background: linear-gradient(to bottom, #5dd, #5dd);
+}
