@@ -2,23 +2,55 @@
 body {
   text-align: center;
   background-color: #b8b5b5; }
-  body .fotosuno h1 {
+  body #carouselExampleIndicators {
+    width: 50vh;
+    max-height: auto; }
+    body #carouselExampleIndicators .carousel-inner {
+      width: 50vh;
+      max-width: 50vh;
+      max-height: auto; }
+      body #carouselExampleIndicators .carousel-inner .carousel-item {
+        width: 50vh;
+        max-width: 50vh;
+        max-height: auto; }
+        body #carouselExampleIndicators .carousel-inner .carousel-item img {
+          width: 50vh;
+          max-width: 50vh;
+          max-height: auto;
+          background-color: black; }
+  body #carouselExampleControls {
+    width: 50vh;
+    max-height: auto; }
+    body #carouselExampleControls .carousel-inner {
+      width: 50vh;
+      max-width: 50vh;
+      max-height: auto; }
+      body #carouselExampleControls .carousel-inner .carousel-item {
+        width: 50vh;
+        max-width: 50vh;
+        max-height: auto; }
+        body #carouselExampleControls .carousel-inner .carousel-item img {
+          width: 50vh;
+          max-width: 50vh;
+          background-color: black;
+          max-height: auto; }
+  body h1 {
     display: inline-block;
     position: relative;
     font-family: 'Dancing Script'; }
-  body .fotosuno h2 {
+  body h2 {
     font-family: 'Dancing Script'; }
-  body .fotosuno h1::after,
-  body .fotosuno h1::before {
+  body h1::after,
+  body h1::before {
     content: '';
     position: absolute;
     width: 120px;
     height: 3px;
     background-color: black;
     top: 0.6em; }
-  body .fotosuno h1::before {
+  body h1::before {
     left: -140px; }
-  body .fotosuno h1::after {
+  body h1::after {
     right: -140px; }
   body .flex-container {
     display: flex;
@@ -33,6 +65,17 @@ body {
       flex: 1;
       text-align: center;
       padding: 30px; }
+      body .flex-container .form .asunto {
+        width: 100%;
+        padding: 7px;
+        margin: 6px 0;
+        border: none;
+        border-bottom: 3px solid #5dd;
+        background: transparent;
+        color: #fff; }
+        body .flex-container .form .asunto textarea {
+          min-height: 140px;
+          resize: none; }
       body .flex-container .form .form__section .form__imput {
         width: 100%;
         padding: 7px;
@@ -41,9 +84,6 @@ body {
         border-bottom: 3px solid #5dd;
         background: transparent;
         color: #fff; }
-      body .flex-container .form .form__section #asunto {
-        min-height: 140px;
-        resize: none; }
       body .flex-container .form .form__section .form__imput:focus {
         background: linear-gradient(to bottom, transparent, #222);
         outline: none;
@@ -52,16 +92,16 @@ body {
       flex: 1;
       display: flex;
       padding: 10px; }
-      body .flex-container .form-img .img-conteiner {
+      body .flex-container .form-img .img-container {
         padding: 20px;
         margin: auto; }
-        body .flex-container .form-img .img-conteiner div {
+        body .flex-container .form-img .img-container #divimg {
           padding: 10px;
           background-color: #fbf8f8;
           border-radius: 50%;
           text-align: center;
           padding: 40px; }
-          body .flex-container .form-img .img-conteiner div img {
+          body .flex-container .form-img .img-container #divimg img {
             width: 90%;
             margin: auto; }
       body .flex-container .form-img .form input[type="submit"]:focus {
