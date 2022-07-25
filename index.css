@@ -1,12 +1,12 @@
-@import url('http://googleapis.com/css?family=Dancing+Script');
+/* @import url('http://googleapis.com/css?family=Dancing+Script'); */
 
-body {
+/* body {
     text-align: center;
     background-color: rgb(184, 181, 181)
-}
+} */
 
 
-h1 {
+/* h1 {
     display: inline-block;
     position: relative;
     font-family: 'Dancing Script';
@@ -32,9 +32,9 @@ h1::before {
 
 h1::after {
     right: -140px;
-}
+} */
 
-#animacion {
+/* #animacion {
     width: 100%;
     height: 7px;
     background-color: black;
@@ -56,7 +56,7 @@ h1::after {
     100% {
         background: black;
     }
-}
+} */
 
 .flex-container {
     display: flex;
@@ -101,6 +101,7 @@ h1::after {
     display: flex;
     padding: 10px;
 }
+
 
 .form-img div {
     padding: 10px;

@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
+    <link rel="stylesheet" href="./css/estilos.css">
     <title>Segunda Entrega Proyecto Final</title>
 </head>
 
@@ -30,7 +31,7 @@
 
     <br><br>
 
-    <form>
+    <form class="form__principal">
         <div class="form-row">
             <div class="col-md-6 mb-3">
                 <label for="validationServer01">First name</label>
@@ -102,7 +103,7 @@
                 <input type="text" class="form__imput" placeholder="Escriba su Dirección">
             </div>
             <div>
-                <textarea class="form__imput" placeholder="Asunto"></textarea>
+                <textarea class="form__imput" id="asunto" placeholder="Asunto"></textarea>
             </div>
             <div class="form__section">
                 <input type="submit" class="form__imput">
@@ -111,7 +112,7 @@
 
         <div class="form-img">
             <div class="img-container">
-                <div>
+                <div id="divimg">
                     <img src="https://i.ya-webdesign.com/images/black-envelope-png-icon-1.png">
                 </div>
             </div>
