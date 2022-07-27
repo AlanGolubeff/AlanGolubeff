@@ -1,54 +1,6 @@
 @import url('http://googleapis.com/css?family=Dancing+Script');
 
 body {
-    #carouselExampleIndicators {
-        width: 50vh;
-        max-height: auto;
-
-        .carousel-inner {
-            width: 50vh;
-            max-width: 50vh;
-            max-height: auto;
-
-            .carousel-item {
-                width: 50vh;
-                max-width: 50vh;
-                max-height: auto;
-
-                img {
-                    width: 50vh;
-                    max-width: 50vh;
-                    max-height: auto;
-                    background-color: black;
-                }
-            }
-        }
-    }
-
-    #carouselExampleControls {
-        width: 50vh;
-
-        max-height: auto;
-
-        .carousel-inner {
-            width: 50vh;
-            max-width: 50vh;
-            max-height: auto;
-
-            .carousel-item {
-                width: 50vh;
-                max-width: 50vh;
-                max-height: auto;
-
-                img {
-                    width: 50vh;
-                    max-width: 50vh;
-                    background-color: black;
-                    max-height: auto;
-                }
-            }
-        }
-    }
 
     text-align: center;
 
