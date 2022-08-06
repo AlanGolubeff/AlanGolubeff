@@ -131,3 +131,130 @@ h1::after {
 .form input[type="submit"]:active {
     background: linear-gradient(to bottom, #5dd, #5dd);
 }
+
+
+
+
+
+
+/* MENUS (pasar todo a scss) */
+
+
+.font-family {
+    font-family: system-ui;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column-2.carta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.plato-carta {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+}
+
+.img-plato-carta {
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+}
+
+.img-plato-carta img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.title-plato-carta {
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    border-top: none;
+    flex-basis: 60%;
+    padding: 0 1rem;
+}
+
+.precio-plato-carta {
+    display: flex;
+    flex-basis: 15%;
+    font-weight: bold;
+}
+
+@media (max-width: 680px) {
+    .column-2.carta {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+/* PROMOS (pasar todo a scss) */
+
+
+.font-family-p {
+    font-family: system-ui;
+}
+
+.wrap-p {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.menu-restaurante {
+    color: #e5e5e5;
+    text-align: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    display: flex;
+    flex-flow: column;
+}
+
+hr {
+    background-color: #FFC300;
+    height: 2.5px;
+    width: 30px;
+    border: none;
+}
+
+.precio-menu {
+    font-weight: bold;
+}
+
+.precio-menu span {
+    font-size: 2rem;
+    color: #FFC300;
+}
+
+@media (max-width: 769px) {
+    .columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .columns {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
