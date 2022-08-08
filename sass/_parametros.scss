@@ -1,0 +1,10 @@
+@mixin size-h1($w , $h) {
+    width: $w;
+    height: $h;
+}
+
+$estilos: (
+    color: black,
+    margen: 0px 10px 20px,
+    borde: solid 5px black,
+    )

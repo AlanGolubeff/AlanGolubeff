@@ -1,4 +1,5 @@
 @import url('http://googleapis.com/css?family=Dancing+Script');
+@import "_parametros.scss";
 
 body {
 
@@ -9,10 +10,9 @@ body {
 
 
 
+    //INDEX//
 
 
-
-    // css index.html
 
     h1 {
         display: inline-block;
@@ -28,8 +28,7 @@ body {
     h1::before {
         content: '';
         position: absolute;
-        width: 120px;
-        height: 3px;
+        @include size-h1 (120px, 3px);
         background-color: black;
         top: 0.6em;
     }
@@ -48,7 +47,9 @@ body {
 
 
 
-    // css encarganos.html
+    //ENCARGANOS// 
+
+
 
     .flex-container {
         display: flex;
@@ -83,14 +84,7 @@ body {
             .form__section {
 
                 .form__imput {
-                    width: 100%;
-                    padding: 7px;
-                    margin: 6px 0;
-                    border: none;
-                    border-bottom: 3px solid #5dd;
-                    background: transparent;
-                    color: #fff;
-
+                    @extend .asunto
                 }
 
 
@@ -163,10 +157,14 @@ body {
     }
 
 
+
+    //footer// 
+
+
     #animacion {
         width: 100%;
         height: 7px;
-        background-color: black;
+        background-color: map-get($estilos, color);
         animation-name: footeranimacion;
         animation-duration: 5s;
         animation-delay: 0, 5s;
@@ -175,7 +173,7 @@ body {
 
     @keyframes footeranimacion {
         0% {
-            background: black;
+            background: map-get($estilos, color);
         }
 
         50% {
@@ -183,8 +181,130 @@ body {
         }
 
         100% {
-            background: black;
+            background: map-get($estilos, color);
         }
     }
 
+}
+
+
+
+// MENU // 
+
+
+
+.font-family {
+    font-family: system-ui;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column-2.carta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.plato-carta {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+}
+
+.img-plato-carta {
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+
+    img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+.title-plato-carta {
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    border-top: none;
+    flex-basis: 60%;
+    padding: 0 1rem;
+}
+
+.precio-plato-carta {
+    display: flex;
+    flex-basis: 15%;
+    font-weight: bold;
+}
+
+@media (max-width: 680px) {
+    .column-2.carta {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+// PROMOS // 
+
+
+.font-family-p {
+    font-family: system-ui;
+}
+
+.wrap-p {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.menu-restaurante {
+    color: #e5e5e5;
+    text-align: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    display: flex;
+    flex-flow: column;
+}
+
+hr {
+    background-color: #FFC300;
+    height: 2.5px;
+    width: 30px;
+    border: none;
+}
+
+.precio-menu {
+    font-weight: bold;
+
+    span {
+        font-size: 2rem;
+        color: #FFC300;
+    }
+}
+
+@media (max-width: 769px) {
+    .columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .columns {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
