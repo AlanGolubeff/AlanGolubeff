@@ -19,7 +19,7 @@ for (let productoS of productosId) {
 }
 
 function elegir() {
-    let productoelegido = prompt("ingresar producto")
+    let productoelegido = prompt("ingrese un número para buscar su producto")
     console.log(productosAr[parseInt(productoelegido)])
 }
 for (let index = 0; index < 5; index++) {
