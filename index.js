@@ -12,15 +12,15 @@ const nombres = ["remera", "carlo", "campera", "pantalon", "zapatillas", "gorra"
 
 const categoria = ["hombre", "mujer", "nino", "nina", "calzado", "accesorios"];
 
-const alala = [];
+const productosAr = [];
 
 for (let productoS of productosId) {
-    alala.push(new Producto(productosId[productoS], nombres[Math.floor(Math.random() * 20)], Math.floor(Math.random() * 1000), categoria[Math.floor(Math.random() * 6)]));
+    roductosAr.push(new Producto(productosId[productoS], nombres[Math.floor(Math.random() * 20)], Math.floor(Math.random() * 1000), categoria[Math.floor(Math.random() * 6)]));
 }
 
 function elegir() {
     let productoelegido = prompt("ingresar producto")
-    console.log(alala[parseInt(productoelegido)])
+    console.log(productosAr[parseInt(productoelegido)])
 }
 for (let index = 0; index < 5; index++) {
     elegir();
