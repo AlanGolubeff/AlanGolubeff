@@ -15,7 +15,7 @@ const categoria = ["hombre", "mujer", "nino", "nina", "calzado", "accesorios"];
 const productosAr = [];
 
 for (let productoS of productosId) {
-    roductosAr.push(new Producto(productosId[productoS], nombres[Math.floor(Math.random() * 20)], Math.floor(Math.random() * 1000), categoria[Math.floor(Math.random() * 6)]));
+    productosAr.push(new Producto(productosId[productoS], nombres[Math.floor(Math.random() * 20)], Math.floor(Math.random() * 1000), categoria[Math.floor(Math.random() * 6)]));
 }
 
 function elegir() {
